@@ -1,0 +1,1089 @@
+/* NAME - AMIT GURUNG */ 
+/* FINAL PROJECT ASSIGNMENT
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .product-box {
+        grid-template-columns: 1fr; /* One product per row on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 36px; /* Decrease font size for smaller screens */
+    }
+
+    .container {
+        margin-top: 100px; /* Adjust margin-top for smaller screens */
+    }
+
+    .feature img {
+        width: 100%; /* Make images take full width on smaller screens */
+    }
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set default font family */
+    line-height: 1.6; /* Set line height */
+    background-color: #111; /* Set background color */
+    color: #fff; /* Set text color */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+main {
+    border-top: 2px solid #fff; /* Add border at the top */
+    margin-top: -90px; /* Adjust margin-top */
+}
+
+ul {
+    font-family: 'Arial', sans-serif; /* Set font family */
+    list-style-type: none; /* Remove default list style */
+    font-size: xx-large; /* Set font size */
+    padding: 0; /* Remove padding */
+    margin-top: 10px; /* Set margin top */
+    margin-right: 20px; /* Set margin right */
+}
+
+.container {
+    max-width: 1200px; /* Set max width */
+    margin: 0 auto; /* Center container */
+    padding: 0 20px; /* Add padding */
+}
+
+.header-content {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+.about #t2 {
+    font-family: 'Bad Boys', sans-serif; /* Set font family */
+    font-size: 80px; /* Set font size */
+}
+
+.logo {
+    font-family: 'GTA Font', Arial, sans-serif; /* Set font family */
+    font-size: xx-large; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    margin-left: 20px; /* Set margin left */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+nav ul {
+    font-family: 'Bad Boys'; /* Set font family */
+    list-style-type: none; /* Remove default list style */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+    margin-right: 20px; /* Set margin right */
+}
+
+nav ul li a {
+    color: #fff; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+nav ul li a:hover {
+    color: #ff4500; /* Change text color on hover */
+}
+
+.trailer-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+#trailer {
+    display: none; /* Hide the trailer by default */
+}
+
+.button-container {
+    display: flex; /* Use flexbox */
+}
+
+.btn,
+.btn,
+.btn-watch {
+    padding: 15px 30px; /* Set padding */
+    margin-left: 20px; /* Set margin left */
+    font-size: 20px; /* Set font size */
+    background-color: #ff44004f; /* Set background color */
+    color: #fff; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Add border radius */
+    border: 2px solid #ff4400; /* Add border */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+.btn-watch:hover,
+.btn:hover {
+    background-color: #cc3700; /* Change background color on hover */
+    border-color: #cc3700; /* Change border color on hover */
+}
+
+.header {
+    display: flex; /* Use flexbox */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center; /* Center-align text */
+    padding: 100px 0; /* Add padding */
+    background-image: url('../images/header.png'); /* Set background image */
+    background-size: cover; /* Cover the entire element */
+    height: 100vh; /* Set height to viewport height */
+}
+
+.container {
+    margin-top: 180px; /* Adjust margin-top */
+}
+
+.hero h1 {
+    font-size: 48px; /* Set font size */
+    margin-bottom: 20px; /* Add bottom margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    animation: neon 2s ease infinite alternate; /* Neon effect animation */
+}
+
+.hero p {
+    font-size: 18px; /* Set font size */
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+/* Neon effect animation */
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 50px #ff4500, 0 0 60px #ff4500;
+    }
+    to {
+        text-shadow: 0 0 10px #fff,0 0 60px #ff4500, 0 0 70px #ff4500;
+    }
+}
+
+/* Features Section */
+@font-face {
+    font-family: 'Bad Boys';
+    src: url('../fonts/BadBoys.ttf') format('woff2'); /* Define custom font */
+}
+
+.features {
+    padding: 50px 0; /* Add padding */
+    background-color: #222; /* Set background color */
+}
+
+.features h2 {
+    text-align: center; /* Center-align text */
+    color: #fff; /* Set text color */
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+.feature {
+    background-color: #222; /* Dark gray background */
+    border: 2px solid #fff; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add margin between features */
+}
+
+.feature h3 {
+    color: #fff; /* White text color */
+    font-family: 'Bad Boys', sans-serif; /* Set font family */
+    font-size: xx-large; /* Set font size */
+}
+
+/* Slide-up animation */
+@keyframes slide-up {
+    from {
+        transform: translateY(50px); /* Move element 50px down */
+        opacity: 0; /* Set initial opacity to 0 */
+    }
+    to {
+        transform: translateY(0); /* Move element back to original position */
+        opacity: 1; /* Set opacity to 1 */
+    }
+}
+
+.feature img {
+    width: 200px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular border radius */
+    margin-bottom: 20px; /* Add bottom margin */
+    transition: all 0.3s ease; /* Smooth transition */
+    filter: grayscale(100%); /* Add grayscale effect */
+}
+
+/* Scale and remove grayscale effect on hover */
+.feature img:hover {
+    transform: scale(1.1); 
+    filter: grayscale(0%); 
+}
+
+.feature h3 {
+    color: #ff4500; /* Set text color */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+.feature p {
+    color: #ccc; /* Set text color */
+}
+
+/* Footer Section */
+footer {
+    background-color: #111; /* Set background color */
+    color: #ccc; /* Set text color */
+    padding: 20px 0; /* Add padding */
+    text-align: center; /* Center-align text */
+    position: relative; /* Relative positioning for pseudo-elements */
+}
+
+.footer-info {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+    position: relative; /* Relative positioning */
+    z-index: 2; /* Set stacking order */
+}
+
+/* Parallax effect for footer background */
+.footer-info:before {
+    content: ''; /* Add content */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Set full width */
+    height: 100%; /* Set full height */
+    background-image: url('footer_bg.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    filter: blur(10px); /* Add blur effect */
+}
+
+.social-links {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    z-index: 3; /* Set stacking order */
+}
+
+.social-links li {
+    display: inline; /* Display items inline */
+    margin-right: 10px; /* Add right margin */
+}
+
+.social-links li img {
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    vertical-align: middle; /* Align vertically */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Scale image on hover */
+.social-links li img:hover {
+    transform: scale(1.1); 
+}
+
+/* Parallax effect for footer overlay */
+footer::after {
+    content: ''; /* Add content */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Set full width */
+    height: 100%; /* Set full height */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.countdown {
+    text-align: center; /* Center-align text */
+    margin-top: 20px; /* Add top margin */
+    font-size: 24px; /* Set font size */
+}
+
+/* Add space between sections */
+.gta-vi-coming-soon .container {
+    position: relative; /* Relative positioning */
+    overflow: hidden; /* Hide overflow */
+    text-align: center; /* Center-align text */
+}
+
+/* Scale and reveal trailer on hover */
+.gta-vi-coming-soon .container:hover .gta-vi-teaser {
+    transform: scale(1.1); 
+    filter: grayscale(0%); 
+}
+
+.gta-vi-coming-soon .container:hover #gta-vi-trailer {
+    display: block; /* Show trailer on hover */
+    opacity: 1; /* Set opacity to 1 */
+}
+
+.gta-vi-coming-soon {
+    margin-top: 50px; /* Add top margin */
+    padding: 20px; /* Add padding */
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+}
+
+.gta-vi-coming-soon img {
+    width: 100%; /* Set width */
+    max-width: 600px; /* Set max width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.gta-vi-coming-soon p {
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+/* Style watch trailer button */
+.gta-vi-coming-soon .btn-watch {
+    background-color: #ff58336e; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Change background color on hover */
+.gta-vi-coming-soon .btn-watch:hover {
+    background-color: #ff804a88; 
+}
+
+/* Show trailer and apply scale transformation on hover */
+.gta-vi-coming-soon #gta-vi-trailer {
+    display: none; /* Hide trailer by default */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Position at the center vertically */
+    left: 50%; /* Position at the center horizontally */
+    transform: translate(-50%, -50%); /* Center-align trailer */
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Apply scale transformation on teaser image hover */
+.gta-vi-coming-soon .gta-vi-teaser:hover {
+    transform: scale(1.1); 
+}
+
+/* Set font family for headings */
+.hero h1,
+.gta-vi-coming-soon h2,
+.features h2 {
+    font-family: 'GTA Font', Arial, sans-serif; /* Set font family */
+}
+
+.product-box {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two products per row */
+    grid-gap: 20px; /* Add gap between grid items */
+}
+
+/* Increase scale on hover */
+.product:hover {
+    transform: scale(1.05); 
+}
+
+.product h3 {
+    font-family: 'GTA Font', Arial, sans-serif; /* Set font family */
+    animation: neon 2s ease infinite alternate; /* Neon effect animation */
+}
+
+
+.product p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.product .btn {
+    background-color: #ff4500;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    display: block;
+    margin: 0 auto;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn2:hover {
+    background-color: #cc3700;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Soft shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    margin-bottom: 10px; /* Add margin between contact details */
+    flex-basis: calc(33.33% - 20px); /* Adjust width for responsiveness */
+}
+
+.contact-details h3 {
+    margin-bottom: 10px;
+    color: #ff4500; /* Orange text color */
+}
+
+.animate-left-to-right {
+    animation: slide-left-to-right 1s ease;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+@keyframes slide-left-to-right {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.social-links {
+    font-family: 'Bad Boys';
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden; 
+}
+
+main {
+    border-top: 2px solid #fff;
+    margin-top: -90px;
+}
+
+ul {
+    font-family: 'Arial', sans-serif;
+    list-style-type: none;
+    font-size: xx-large;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.about #t2 {
+    font-family: 'Bad Boys', sans-serif; 
+    font-size: 80px;
+}
+
+
+.logo {
+    font-family: 'GTA Font', Arial, sans-serif; 
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    font-family: 'Bad Boys';
+    list-style-type: none;
+    display: flex; 
+    align-items: center; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+
+.trailer-container {
+    display: flex;
+    align-items: center;
+}
+
+#trailer {
+    display: none; /* Hide the trailer by default */
+}
+
+.button-container {
+    display: flex; /* Use flexbox */
+}
+
+.btn,
+.btn,
+.btn-watch {
+    padding: 15px 30px; /* Increase padding for both buttons */
+    margin-left: 20px; /* Add space between buttons */
+    font-size: 20px; /* Increase font size */
+    background-color: #ff44004f; /* Background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #ff4400; /* Add border */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-watch:hover,
+.btn:hover {
+    background-color: #cc3700; /* Change background color on hover */
+    border-color: #cc3700; /* Change border color on hover */
+}
+
+
+.header {
+    display: flex;
+}
+
+/* Hero Section */
+.hero {
+
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('../images/header.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 180px;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: neon 2s ease infinite alternate; /* Neon effect animation */
+}
+
+.hero p {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 50px #ff4500, 0 0 60px #ff4500;
+    }
+    to {
+        text-shadow: 0 0 10px #fff,0 0 60px #ff4500, 0 0 70px #ff4500;
+    }
+}
+
+
+
+/* Features Section */
+
+        /* Define the custom font */
+        @font-face {
+            font-family: 'Bad Boys';
+            src: url('../fonts/BadBoys.ttf') format('woff2');
+        
+        }
+        
+.features {
+    padding: 50px 0;
+    background-color: #222;
+}
+
+.features h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+
+}
+
+.feature {
+    background-color: #222; /* Dark gray background */
+    border: 2px solid #fff; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; 
+    margin-bottom: 20px; /* Add margin between features */
+}
+.feature h3 {
+    color: #fff; /* White text color */
+    font-family: 'Bad Boys', sans-serif;
+    font-size: xx-large;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.feature img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    filter: grayscale(100%); /* Add grayscale effect */
+}
+
+.feature img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%); /* Remove grayscale effect on hover */
+}
+
+.feature h3 {
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #ccc;
+}
+
+/* Footer Section */
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Parallax effect */
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Ensure the content stays above the pseudo-element */
+}
+
+.footer-info:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('footer_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    z-index: 3;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links li img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.social-links li img:hover {
+    transform: scale(1.1);
+}
+
+/* Parallax effect for the footer */
+footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Add space between sections */
+
+.gta-vi-coming-soon .container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gta-vi-coming-soon .container:hover .gta-vi-teaser {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.gta-vi-coming-soon .container:hover .btn-watch {
+    background-color: #ff804a88;
+    transform: translateY(-5px);
+}
+
+.drop-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: 'Custom Font'; 
+    color: red;
+    font-size: 80px;
+
+}
+
+@font-face {
+    font-family: 'Custom Font';
+    src: url('../fonts/gta.ttf'); /* Specify the path to your font file */
+}
+
+/* Add hover effect for the trailer */
+.gta-vi-coming-soon .container:hover #gta-vi-trailer {
+    display: block;
+    opacity: 1;
+}
+.gta-vi-coming-soon {
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 10px; /* Add border radius */
+}
+
+
+.gta-vi-coming-soon h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gta-vi-coming-soon img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.gta-vi-coming-soon p {
+    margin-bottom: 20px;
+}
+
+.gta-vi-coming-soon .btn-watch {
+    background-color: #ff58336e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.gta-vi-coming-soon .btn-watch:hover {
+    background-color: #ff804a88;
+}
+
+.gta-vi-coming-soon #gta-vi-trailer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gta-vi-coming-soon .gta-vi-teaser {
+    transition: transform 0.3s ease; /* Add transition for smooth transformation */
+}
+
+.gta-vi-coming-soon .gta-vi-teaser:hover {
+    transform: scale(1.1); /* Apply scale transformation on hover */
+}
+@font-face {
+    font-family: 'GTA Font';
+    src: url('../fonts/f1.ttf') format('woff2'); 
+
+}
+
+
+.hero h1,
+.gta-vi-coming-soon h2,
+.features h2 {
+    font-family: 'GTA Font', Arial, sans-serif; 
+}
+
+
+
+.product h3 {
+    font-family: 'GTA Font', Arial, sans-serif; /* Apply GTA font to product titles */
+    animation: neon 2s ease infinite alternate; /* Apply neon effect animation */
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 50px #ff4500, 0 0 60px #ff4500;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 60px #ff4500, 0 0 70px #ff4500;
+    }
+}
+
+.product-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two products per row */
+    grid-gap: 20px; /* Gap between products */
+
+}
+
+.products h2 {
+    font-family: 'Bad Boys', sans-serif;
+    font-size: 80px;
+}
+
+.product {
+    border: 2px solid #fff; /* Add white border */
+    border-radius: 10px; /* Add border radius */
+    padding: 20px; /* Add padding */
+    background-color: rgba(255, 255, 255, 0.1); /* Add background color with transparency */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    transition: transform 0.3s ease; /* Add transition for zoom effect */
+    margin-bottom: 20px; /* Add margin between products */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Increase scale on hover */
+}
+
+
+
+@media (max-width: 768px) {
+    .product-box {
+        grid-template-columns: 1fr; /* One product per row on smaller screens */
+    }
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+}
+
+.product h3 {
+    font-family: 'GTA Font', Arial, sans-serif;
+    animation: neon 2s ease infinite alternate;
+    color: #fff;
+}
+
+.product p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.product .btn {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product .btn:hover {
+    background-color: #cc3700;
+}
+
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Bad Boys', sans-serif;
+
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn2 {
+    display: block;
+    margin: 0 auto;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn2:hover {
+    background-color: #cc3700;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Soft shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    margin-bottom: 10px; /* Add margin between contact details */
+    flex-basis: calc(33.33% - 20px); /* Adjust width for responsiveness */
+}
+
+.contact-details:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+    transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.contact-details h3 {
+    margin-bottom: 10px;
+    color: #ff4500; /* Orange text color */
+}
+
+.contact-details p {
+    color: #ccc; /* Light gray text color */
+}
+
+.map {
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.animate-left-to-right {
+    animation: slide-left-to-right 1s ease;
+}
+
+.about {
+    text-align: center;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+
+@keyframes slide-left-to-right {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.social-links {
+    font-family: 'Bad Boys';
+}
